@@ -1,0 +1,12 @@
+import spark.SparkContext
+import SparkContext._
+
+val textFile = sc.textFile("hdfs://9.125.73.223:9000/user/hive/warehouse/d_tr_order_data/order_data_2016-01-01")
+val result = textFile.flatMap(line => line.split("\t")).map(word => (word, 1)).reduceByKey(_ + _)
+result.collect().foreach(println)
+
+
+
+
+//订单号		司机		乘客		出发地			目的地			金额			时间
+//d456d62d51556ec0d	d4ec2125aff74eded207d2d915ef682f	d4ec2125aff74eded207d2d915ef682f	10.6	2016-01-01 11:05:59
