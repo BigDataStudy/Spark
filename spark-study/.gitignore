@@ -1,0 +1,7 @@
+/bin/
+/hbase-client-1.1.2.jar
+/hbase-common-1.1.2.jar
+/kafka_2.10-0.8.2.1.jar
+/spark-assembly-1.6.1-hadoop2.6.0.jar
+/spark-streaming-kafka_2.10-1.6.1.jar
+/spark-unsafe_2.10-1.6.1.jar
