@@ -1,0 +1,1 @@
+./bin/spark-submit   --class SparkSaveToHDFS   --master spark://9.125.73.223:7077  --deploy-mode client  --executor-memory 1G   --num-executors 10  lib/demo-project_2.11-1.0.jar
